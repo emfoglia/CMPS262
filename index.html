@@ -28,40 +28,13 @@
     border-color: #bebeff;
   }
   body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     background-color:#190b28;
   }
   p {
     color: #bebeff;
     font-size: 23px;
-  }
-
-  /* Style for Navigation Bar*/
-  ul.navButtons{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  top: 0;
-  width: 99%;
-  }
-
-  li.navList {
-  float: right;
-  border-right: 1px solid #190b28;
-  }
-
-  a.navLinks {
-  display: block;
-  padding: 8px;
-  background-color: #6C6594;
-  }
-
-  li.navList a:hover {
-  background-color: #8983A5;
-  color: #8E518D;
-  }
-  li.navList a:active {
-    color: white;
   }
   table {
     border: 1px solid #8E518D;
@@ -77,46 +50,47 @@
     color: bebeff;
     border: 1px solid #8E518D;
   }
+  .topnav {
+    overflow: hidden;
+    background-color: #190B28;
+  }
+  .topnav a {
+    float: left;
+    color: #BEBEFF;
+    text-align; center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover{
+    background-color: #281240;
+    color: #8E518D;
+  }
+  .topnav a.active {
+    background-color: #333748;
+    color: #BEBEFF;
+  }
+
   </style>
   <body>
-    <div data-role="page" id="page1">
-      <div data-role="header">
-        <h1>Emily M Foglia</h1>
-      </div>
-      <div data-role="main" class="ui-content">
-        <p>Welcome to the site</p>
-      </div>
-      <div data-role="footer">
-        <div data-role="navbar">
-          <ul>
-            <li><a href="#home" class="ui-btn-active">Home</a></li>
-            <li><a href="photos.html">Photos</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="Hobbies.html">Hobbies</a></li>
-          </ul>
-        </div> <!-- navbar -->
-      </div> <!-- footer -->
-    </div> <!-- page -->
-  <div> <!-- Navigation Bar -->
-    <ul class="navButtons">
-      <li class="navList"><a class="navLinks" href="">Contact</a></li>
-      <li class="navList"><a class="navLinks" href="">Education</a></li>
-      <li class="navList"><a class="navLinks" href="">About Me</a></li>
-      <li class="navList"><a class="navLinks" href="index.html">Home</a></li>
-    </ul>
+  <div class="topnav"> <!-- Navigation Bar -->
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href=#education>Education</a>
+    <a href=#contact>Contact</a>
   </div>
   <div> <!-- Title -->
     <h1>Hello, World! I'm Emily Foglia.</h1>
   </div>
-  <div> <!-- Navigation Bar -->
+  <div> <!-- Picture -->
     <img style="vertical-align:middle;width=275px;height:500px;" align="right" src="picture of me.jpg">
   </div>
-  <div> <!-- About Me -->
+  <div id="about"> <!-- About Me -->
     <p>I am from Pittsburgh, Pennsylvania.
       <br>My hobbies include exotic pet-keeping, gaming, and reading.
       <br>I am persuing a career in Software Development.</p>
   </div>
-  <div> <!-- Education Info -->
+  <div id="education"> <!-- Education Info -->
     <h2><u>Education</u></h2>
     <ul>
       <li> Applied Computer Science: Software Development </li>
@@ -159,7 +133,7 @@
       </tr>
     </table>
   </div>
-  <div> <!-- Contact Info -->
+  <div id="contact"> <!-- Contact Info -->
     <h2><u>Contact Information</u></h2>
     <ul>
       <li>emfogli@pointpark.edu</li>
