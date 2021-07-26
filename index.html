@@ -13,7 +13,7 @@
     });
   });
   </script>
-  <script>
+  <script> // nyan cat
     $(document).ready(function() {
     function rgt(){
       $('#sldr').animate({left: screen.width }, 5000, hider);
@@ -24,6 +24,14 @@
         rgt();
     }
     });
+  </script>
+  <script> // shrink/enlarge
+  $("button$reduce").on("click", function(){
+    $("h1.shrinkable").addClass("big");
+  });
+  $("button$enlarge").on("click", function(){
+    $("h1.shrinkable").removeClass("big");
+  });
   </script>
 </head>
   <style>
@@ -55,7 +63,7 @@
     border-style: solid;
     border-color: #bebeff;
     float: right;
-    height:500px;
+    height:400px;
     align: right;
   }
   body {
@@ -103,6 +111,9 @@
     background-color: #8585FF;
     color: white;
   }
+  button {
+    width: 20px;
+  }
 
   </style>
   <body>
@@ -120,7 +131,7 @@
   </div>
 
   <div> <!-- Title -->
-    <h1>Hello, World! I'm Emily Foglia.</h1>
+    <h1 class="shrinkable">Hello, World! I'm Emily Foglia.</h1>
   </div>
   <div> <!-- Picture -->
     <img class="selfie" src="picture of me.jpg">
@@ -172,6 +183,10 @@
         <td>12/17/2021</td>
       </tr>
     </table>
+  </div>
+  <div> <!-- Shrink/enlarge Buttons -->
+    <button id="reduce" style="width:200px;float:right;">Shrink Title</button>
+    <button id="enlarge" style="width:200px;float:right;">Enlarge Title</button>
   </div>
   <!-- NYAN CAT -->
   <br> <br>
