@@ -16,7 +16,7 @@
   <script>
     $(document).ready(function() {
     function rgt(){
-      $('#sldr').animate({left: "150" }, 10000, hider);
+      $('#sldr').animate({left: screen.width }, 5000, hider);
     }
     rgt();
     function hider() {
@@ -41,6 +41,7 @@
     font-size:55px;
   }
   h2 {
+    margin-left: 10px;
     font-size:27px;
     color: black;
   }
@@ -49,10 +50,13 @@
     color: black;
     font-size:23px;
   }
-  img {
+  .selfie {
     border: 10px;
     border-style: solid;
     border-color: #bebeff;
+    float: right;
+    height:500px;
+    align: right;
   }
   body {
     margin: 0;
@@ -65,6 +69,7 @@
     font-size: 23px;
   }
   table {
+    margin-left: 25px;
     border: 1px solid #8E518D;
     border-collapse: collapse;
   }
@@ -114,19 +119,11 @@
     </div>
   </div>
 
-<!-- HERE IS NYAN CAT! .......... in the future -->
-
-  <form id="form1" runat="server">
-    <div>
-      <img id="sldr" src="nyan cat.gif" style="position:absolute"/>
-    </div>
-  </form>
-
   <div> <!-- Title -->
     <h1>Hello, World! I'm Emily Foglia.</h1>
   </div>
   <div> <!-- Picture -->
-    <img style="vertical-align:middle;width=275px;height:500px;" align="right" src="picture of me.jpg">
+    <img class="selfie" src="picture of me.jpg">
   </div>
   <div id="about"> <!-- About Me -->
     <p>I am from Pittsburgh, Pennsylvania.
@@ -176,5 +173,12 @@
       </tr>
     </table>
   </div>
+  <!-- NYAN CAT -->
+  <br> <br>
+  <form id="form1" runat="server">
+    <div>
+      <img id="sldr" src="nyan cat.gif" style="position:absolute"/>
+    </div>
+  </form>
   </body>
 </html>
