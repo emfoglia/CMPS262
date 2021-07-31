@@ -5,7 +5,19 @@
 <!--  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.css"></link> -->
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.js"></script>
-
+  <script>
+  $(document).ready(function(){
+    $("#WordPress").hide(); // Hide WordPress on page load
+    $("#discordbtn").click(function(){ //Discord Button
+      $("#WordPress").hide();
+      $("#DiscordBot").show();
+    });
+    $("#wordpressbtn").click(function(){ //WordPress Button
+      $("#DiscordBot").hide();
+      $("#WordPress").show();
+    });
+  });
+  </script>
   <title>Portfolio</title>
 </head>
 <body>
@@ -74,35 +86,45 @@
     font-size: 20px;
   }
 </style>
-<div> <!-- header area -->
+
+<div id="header">
   <h1>PROJECTS</h1>
   <h2>These are projects that I have worked on both at Point Park University and out of school.</h2>
   <br>
 </div>
+
   <!-- buttons for each section -->
   <!-- nav bar style? -->
   <!-- show/hide sections by buttons -->
-  <button>Discord Bot</button>
-  <button>OTHER PROJECT</button>
-  <!-- Discord Bot -->
+  <button id="discordbtn">Discord Bot</button>
+  <button id="wordpressbtn">WordPress</button>
+
+<div id="DiscordBot">
   <h3>Discord Bot - Scarlet</h3>
   <p>This project is a bot used in Discord servers. It is coded in JavaScript.</p>
   <p>"She" responds to premade commands using an exclamation point.</p>
   <p>I created her for my family's Discord server, as she represents the family dog.</p>
-  <img class="scarletFunctionality" src="Scarlet Bot Functionality.png"></img>
-  <p class="photoDesc">Bot Functionality</p>
-  <img class="scarletCode" src="Scarlet Bot Code.png"></img>
-  <p class="photoDesc">Snippet of the Code</p>
-  <!-- WordPress Site -->
+  <div id="Discord Bot Photos">
+    <img class="scarletFunctionality" src="Scarlet Bot Functionality.png"></img>
+    <p class="photoDesc">Bot Functionality</p>
+    <img class="scarletCode" src="Scarlet Bot Code.png"></img>
+    <p class="photoDesc">Snippet of the Code</p>
+  </div>
+</div>
+
+<div id="WordPress">
   <h3>FreeBSD - WordPress Server</h3>
   <p>This project is a WordPress page hosted on a FreeBSD server.</p>
   <p>I created the server and webpage in my Server Management course at Point Park University.</p>
   <p>This course taught me the fundamentals of FreeBSD and Linux, as well as shell scripting and server management tasks.</p>
-  <img class="wpFolder" src="wordpress folder.png"></img>
-  <p class="photoDesc">FreeBSD Server: WordPress Folder Contents</p>
-  <img class="wpHomepage" src="wordpress homepage.png"></img>
-  <p class="photoDesc">Homepage of WordPress Website</p>
-  <img class="wpBlogPost" src="wordpress blog post.png"></img>
-  <p class="photoDesc">Blog Post on WordPress Website</p>
+  <div id="WordPress Photos">
+    <img class="wpFolder" src="wordpress folder.png"></img>
+    <p class="photoDesc">FreeBSD Server: WordPress Folder Contents</p>
+    <img class="wpHomepage" src="wordpress homepage.png"></img>
+    <p class="photoDesc">Homepage of WordPress Website</p>
+    <img class="wpBlogPost" src="wordpress blog post.png"></img>
+    <p class="photoDesc">Blog Post on WordPress Website</p>
+  </div>
+</div>
 </body>
 </html>
