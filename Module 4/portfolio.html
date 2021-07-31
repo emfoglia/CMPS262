@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <!-- jQuery -->
-<!--  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.css"></link> -->
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.js"></script>
   <script>
@@ -22,6 +21,16 @@
 </head>
 <body>
 <style>
+  .btn {
+    margin: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    border: 3px solid white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
   .scarletFunctionality {
     display: block;
     margin-left: auto;
@@ -93,11 +102,10 @@
   <br>
 </div>
 
-  <!-- buttons for each section -->
-  <!-- nav bar style? -->
-  <!-- show/hide sections by buttons -->
-  <button id="discordbtn">Discord Bot</button>
-  <button id="wordpressbtn">WordPress</button>
+<div id="projectButtons">
+  <a href="#" class="btn" id="discordbtn">Discord Bot</a>
+  <a href="#" class="btn" id="wordpressbtn">WordPress</a>
+</div>
 
 <div id="DiscordBot">
   <h3>Discord Bot - Scarlet</h3>
