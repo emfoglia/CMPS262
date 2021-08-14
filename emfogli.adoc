@@ -1,15 +1,15 @@
 :imagesdir: Images
 :page_url: emfogli.it.pointpark.edu
 :page_status: Available
-:page_version: 1.6.0
+:page_version: 1.6.5
 :module: 6
-:commits: 14
+:commits: 19
 
 # Personal Website
 
 All files are uploaded as submissions to assignments in CMPS 262: Advanced Programming.
 
-image::myLogo.jpg[alt=logo,width=250px][orientation=portrait]
+image::myLogo.png[alt=logo,width=250px][orientation=portrait]
 
 ## About the Site
 
