@@ -20,8 +20,8 @@ test
 
 ## Git Branch Strategy
 
-image::GitBranchDiagram.png[alt=gitBranchDiagram,width=250px][orientation=portrait]
+image::GitBranchDiagram.png[alt=gitBranchDiagram,width=500px][orientation=portrait]
 
 ## Implementation Strategy
 
-image::ImplementationDiagram.png[alt=implementationDiagram,width=250px][orientation=portrait]
+image::ImplementationDiagram.png[alt=implementationDiagram,width=500px][orientation=portrait]
