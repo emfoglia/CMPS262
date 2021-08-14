@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emily Foglia</title>
+  <!-- jQuery -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.css"></link>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.js"></script>
+  <script> // dropdown
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideToggle("slow");
+    });
+  });
+  </script>
+  <script> // nyan cat
+    $(document).ready(function() {
+    function rgt(){
+      $('#sldr').animate({left: screen.width }, 5000, hider);
+    }
+    rgt();
+    function hider() {
+      $('#sldr').css('left', '0px');
+        rgt();
+    }
+    });
+  </script>
+  <script> // shrink/enlarge
+  $("button$reduce").on("click", function(){
+    $("h1.shrinkable").addClass("big");
+  });
+  $("button$enlarge").on("click", function(){
+    $("h1.shrinkable").removeClass("big");
+  });
+  </script>
+</head>
+  <style>
+  #panel {
+    text-align: center;
+    padding-top: 50px;
+    display: none;
+  }
+  .contactInfo {
+    color: white;
+  }
+  h1 {
+    text-align: center;
+    color: #00007A;
+    font-size:55px;
+  }
+  h2 {
+    margin-left: 10px;
+    font-size:27px;
+    color: black;
+  }
+  ul {
+    list-style-type:circle;
+    color: black;
+    font-size:23px;
+  }
+  .selfie {
+    border: 10px;
+    border-style: solid;
+    border-color: #bebeff;
+    float: right;
+    height:400px;
+    align: right;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+  }
+  p {
+    margin-left: 25px;
+    color: black;
+    font-size: 23px;
+  }
+  table {
+    margin-left: 25px;
+    border: 1px solid #8E518D;
+    border-collapse: collapse;
+  }
+  th {
+    font-size: 23 px;
+    color: bebeff;
+    border: 1px solid #8E518D;
+  }
+  td {
+    font-size: 23px;
+    color: bebeff;
+    border: 1px solid #8E518D;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+  }
+  .topnav a {
+    float: left;
+    color: white;
+    text-align; center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover{
+    background-color: #a7a6ba;
+    color: white;
+  }
+  .topnav a.active {
+    background-color: #8585FF;
+    color: white;
+  }
+  button {
+    width: 20px;
+  }
+
+  </style>
+  <body>
+  <div class="topnav"> <!-- Navigation Bar -->
+    <a href="#home">Home</a>
+    <a class="active" href="#about">About Me</a>
+    <a href=#education>Education</a>
+    <a id="flip" href="#">Contact</a>
+    <div id="panel"> <!-- Contact Info -->
+      <div id="contact">
+        <p class="contactInfo">emfogli@pointpark.edu</p>
+        <p class="contactInfo">(724) 809-4489</p>
+      </div>
+    </div>
+  </div>
+
+  <div> <!-- Title -->
+    <h1 class="shrinkable">Hello, World! I'm Emily Foglia.</h1>
+  </div>
+  <div> <!-- Picture -->
+    <img class="selfie" src="picture of me.jpg">
+  </div>
+  <div id="about"> <!-- About Me -->
+    <p>I am from Pittsburgh, Pennsylvania.
+      <br>My hobbies include exotic pet-keeping, gaming, and reading.
+      <br>I am persuing a career in Software Development.</p>
+  </div>
+  <div id="education"> <!-- Education Info -->
+    <h2><u>Education</u></h2>
+    <ul>
+      <li> Applied Computer Science: Software Development </li>
+      <li> Point Park University </li>
+      <li> Graduation: Spring 2022 </li>
+    </ul>
+  </div>
+  <div> <!-- Course List Table -->
+    <h2><u>Fall 2021 Course List</u></h2>
+    <table>
+      <tr>
+        <th>Course Code</th>
+        <th>Course Name</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+      </tr>
+      <tr>
+        <td>CMPS 161</td>
+        <td>Networking and Security</td>
+        <td>8/29/2021</td>
+        <td>10/22/2021</td>
+      </tr>
+      <tr>
+        <td>CMPS 330</td>
+        <td>Electronic Commerce I</td>
+        <td>10/24/2021</td>
+        <td>12/17/2021</td>
+      </tr>
+      <tr>
+        <td>CMPS 361</td>
+        <td>Web Application Development</td>
+        <td>8/29/2021</td>
+        <td>10/22/2021</td>
+      </tr>
+      <tr>
+        <td>CMPS 363</td>
+        <td>Digital Security</td>
+        <td>10/24/2021</td>
+        <td>12/17/2021</td>
+      </tr>
+    </table>
+  </div>
+  <div> <!-- Shrink/enlarge Buttons -->
+    <button id="reduce" style="width:200px;float:right;">Shrink Title</button>
+    <button id="enlarge" style="width:200px;float:right;">Enlarge Title</button>
+  </div>
+  <!-- NYAN CAT -->
+  <br> <br>
+  <form id="form1" runat="server">
+    <div>
+      <img id="sldr" src="nyan cat.gif" style="position:absolute"/>
+    </div>
+  </form>
+  </body>
+</html>
