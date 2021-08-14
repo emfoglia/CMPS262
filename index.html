@@ -16,6 +16,9 @@
         $("#home").hide();
         $("#homeBTN").removeClass("active");
 
+        $("#about").hide();
+        $("#aboutBTN").removeClass("active");
+
         $("#education").hide();
         $("#educationBTN").removeClass("active");
 
@@ -66,6 +69,7 @@
     text-align: center;
     padding-top: 50px;
     display: none;
+    background-color: black;
   }
   .contactInfo {
     color: white;
@@ -89,6 +93,11 @@
     border: 10px;
     border-style: solid;
     border-color: #bebeff;
+    float: right;
+    height:400px;
+    align: right;
+  }
+  .logo {
     float: right;
     height:400px;
     align: right;
@@ -145,17 +154,25 @@
   <body>
   <div class="topnav"> <!-- Navigation Bar -->
     <a href="#home" id="homeBTN">Home</a>
-    <a href="#about">About Me</a>
+    <a href="#about" id="aboutBTN">About Me</a>
     <a href="#education" id="educationBTN">Education</a>
-    <a href="/API.html">API</a>
-    <a id="flip" href="#">Contact</a>
-    <div id="panel"> <!-- Contact Info -->
+    <a href="#API" id="apiBTN">API</a>
+    <a href="#portfolio" id="portfolioBTN">Portfolio</a>
+    <a href="#" id="flip">Contact</a>
+  </div>
+
+  <div>  <!-- Contact Info -->
+    <div id="panel">
       <div id="contact">
         <p class="contactInfo">emfogli@pointpark.edu</p>
         <p class="contactInfo">(724) 809-4489</p>
+        <a class="contactInfo" href="https://www.linkedin.com/in/emilyfoglia/" target="_blank">LinkedIn</a>
+        <br>
+        <br>
       </div>
     </div>
   </div>
+
 
   <div id="home"> <!-- Homepage -->
 
@@ -192,12 +209,15 @@
 
   <div id="education"> <!-- Education -->
 
+    <div> <!-- Title -->
+      <h1>Education</h1>
+    </div>
+
     <div> <!-- Picture -->
       <img class="logo" src="myLogo.jpg">
     </div>
 
   <div> <!-- Education Info -->
-    <h2><u>Education</u></h2>
     <ul>
       <li> Applied Computer Science: Software Development </li>
       <li> Point Park University </li>
