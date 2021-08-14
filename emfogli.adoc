@@ -1,4 +1,7 @@
 :imagesdir: Images
+:page_url: emfogli.it.pointpark.edu
+:page_status: Available
+:page_version: 1.6.0
 
 # Personal Website
 
@@ -9,19 +12,35 @@ image::myLogo.jpg[alt=logo,width=250px][orientation=portrait]
 ## About the Site
 
 The website contains various information about me and other course requirements.
-There are sections for facts about me, my education, my contact information, and my portfolio, as well as examples of my ability to utilize features of HTML, JavaScript, and jQuery.
+There are sections for facts about me, my education, my contact information, and my portfolio, as well as examples of my ability to utilize features of various languages.
 
-# test
-## test
-### test
-test
-- test
-/ test
+## Markup/Programming Languages
+
+- HTML, CSS
+- JavaScript
+- jQuery
+
+## Website Details
+
+[grid="rows", format="csv"]
+
+|==========================
+URL, Status, Version
+{page_url}, {page_status}, {page_version}
+|==========================
+
+## Verisons
+
+discuss here
 
 ## Git Branch Strategy
+
+Discuss here
 
 image::GitBranchDiagram.png[alt=gitBranchDiagram,width=500px][orientation=portrait]
 
 ## Implementation Strategy
+
+Discuss here
 
 image::ImplementationDiagram.png[alt=implementationDiagram,width=500px][orientation=portrait]
