@@ -1,0 +1,8 @@
+# Personal Website
+
+All files are uploaded as submissions to assignments in CMPS 262: Advanced Programming.
+
+## About the Page
+
+The website contains various information about me and other course requirements.
+There are sections for facts about me, my education, my contact information, and my portfolio, as well as examples of my ability to utilize features of HTML, JavaScript, and jQuery.
