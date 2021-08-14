@@ -2,6 +2,8 @@
 :page_url: emfogli.it.pointpark.edu
 :page_status: Available
 :page_version: 1.6.0
+:module: 6
+:commits: 14
 
 # Personal Website
 
@@ -31,16 +33,43 @@ URL, Status, Version
 
 ## Verisons
 
-discuss here
+- {page_version}
+- "Webpage Version"."CMPS 262 Module"."GitHub Commit #"
+
+There have been {module} modules to date, with {commits} total commits.
+
+All pieces of the webpage were merged in module 6, eliminating multiple URLs.
 
 ## Git Branch Strategy
 
-Discuss here
-
 image::GitBranchDiagram.png[alt=gitBranchDiagram,width=500px][orientation=portrait]
+
+- My Git Branch Strategy begins with my local environment.
+
+- When files have been modified, they are uploaded to GitHub via GitBash.
+
+- GitBash places the files in the Dev Branch.
+
+- A Pull Request is created.
+
+- The Pull Request is reviewed, by myself or with a peer.
+
+- Modifications are accepted/denied and pushed onto the Dev Branch.
+
+- The final version is pushed onto the Master Branch.
 
 ## Implementation Strategy
 
-Discuss here
-
 image::ImplementationDiagram.png[alt=implementationDiagram,width=500px][orientation=portrait]
+
+- My Implementation strategy begins with the development process.
+
+** This process consists of changes to files via Atom and constant testing via Atom's Live Server.
+
+- Once modifications are finished, the files move to the Git Branch Strategy (see above).
+
+- Changes are then made live through FileZilla.
+
+- Point Park University's Servers host the live webpage.
+
+- It is then verified, in which I determine if more modifications are necessary at this time.
