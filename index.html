@@ -6,32 +6,27 @@
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.css"></link>
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.js"></script>
-  <script> // dropdown
-  $(document).ready(function(){
-    $("#flip").click(function(){
-      $("#panel").slideToggle("slow");
-    });
-  });
-  </script>
-  <script> // nyan cat
+  <script>
     $(document).ready(function() {
-    function rgt(){
-      $('#sldr').animate({left: screen.width }, 5000, hider);
-    }
-    rgt();
-    function hider() {
-      $('#sldr').css('left', '0px');
-        rgt();
-    }
+      $("#flip").click(function(){ //contact info dropdown
+        $("#panel").slideToggle("slow");
+      })
+      $("#enlarge").on("click", function(){ //enlarge
+        $("h1.shrinkable").css("font-size", "55px");
+        console.log("hit");
+      })
+      $("#reduce").on("click", function(){ //reduce
+        $("h1.shrinkable").css("font-size", "35px");
+      })
+      function rgt(){ //nyan cat
+        $('#sldr').animate({left: screen.width }, 5000, hider);
+      }
+      rgt();
+      function hider() {
+        $('#sldr').css('left', '0px');
+          rgt();
+      }
     });
-  </script>
-  <script> // shrink/enlarge
-  $("button$reduce").on("click", function(){
-    $("h1.shrinkable").addClass("big");
-  });
-  $("button$enlarge").on("click", function(){
-    $("h1.shrinkable").removeClass("big");
-  });
   </script>
 </head>
   <style>
@@ -117,10 +112,10 @@
   </style>
   <body>
   <div class="topnav"> <!-- Navigation Bar -->
-    <a href="emfogli.it.pointpark.edu/index.html">Home</a>
+    <a href="/index.html">Home</a>
     <a class="active" href="#about">About Me</a>
     <a href="#education">Education</a>
-    <a href="emfogli.it.pointpark.edu/API.html">API</a>
+    <a href="/API.html">API</a>
     <a id="flip" href="#">Contact</a>
     <div id="panel"> <!-- Contact Info -->
       <div id="contact">
@@ -185,8 +180,8 @@
     </table>
   </div>
   <div> <!-- Shrink/enlarge Buttons -->
-    <button id="reduce" style="width:200px;float:right;">Shrink Title</button>
     <button id="enlarge" style="width:200px;float:right;">Enlarge Title</button>
+    <button id="reduce" style="width:200px;float:right;">Shrink Title</button>
   </div>
   <!-- NYAN CAT -->
   <br> <br>
