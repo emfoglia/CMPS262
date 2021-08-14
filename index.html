@@ -6,11 +6,13 @@
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.css"></link>
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.js"></script>
+  <script src="API.js"></script>
+  <script src="portfolio.js"></script>
   <script>
     $(document).ready(function() {
       hide(); //hide all sections on load
       $("#home").show(); //show homepage on load
-      $("#homeBTN").addClass("active");
+      $("#homeBTN").addClass("active"); //home button active on load
 
       function hide(){ //hide all sections, remove active
         $("#home").hide();
@@ -29,31 +31,44 @@
         $("#portfolioBTN").removeClass("active");
       }
 
-      $("#educationBTN").on("click", function(){
-        hide();
-        $("#education").show();
-        $("#eductionBTN").addClass("active");
-      })
-      $("#homeBTN").on("click", function(){
+      $("#homeBTN").on("click", function(){ // click HOME
         hide();
         $("#home").show();
         $("#homeBTN").addClass("active");
       })
-
-
-
-
+      $("#aboutBTN").on("click", function(){ // click ABOUT
+        hide();
+        $("#about").show();
+        $("#aboutBTN").addClass("active");
+      })
+      $("#educationBTN").on("click", function(){ //click EDUCATION
+        hide();
+        $("#education").show();
+        $("#educationBTN").addClass("active");
+      })
+      $("#apiBTN").on("click", function(){ //click API
+        hide();
+        $("#API").show();
+        $("#apiBTN").addClass("active");
+      })
+      $("#portfolioBTN").on("click", function(){ //click PORTFOLIO
+        hide();
+        $("#portfolio").show();
+        $("#portfolioBTN").addClass("active");
+      })
 
       $("#flip").click(function(){ //contact info dropdown
         $("#panel").slideToggle("slow");
       })
-      $("#show").on("click", function(){ //show
+
+      $("#show").on("click", function(){ //show nyan cat
         $("#sldr").show();
       })
-      $("#hide").on("click", function(){ //hide
+      $("#hide").on("click", function(){ //hide nyan cat
         $("#sldr").hide();
       })
-      function rgt(){ //nyan cat
+
+      function rgt(){ //nyan cat animation
         $('#sldr').animate({left: screen.width }, 5000, hider);
       }
       rgt();
@@ -184,7 +199,7 @@
     <img class="selfie" src="picture of me.jpg">
   </div>
 
-  <div id="about"> <!-- About Me -->
+  <div>
     <p>I am from Pittsburgh, Pennsylvania.
       <br>My hobbies include exotic pet-keeping, gaming, and reading.
       <br>I am persuing a career in Software Development.</p>
@@ -206,6 +221,10 @@
   </div>
 
   </div> <!-- END Homepage -->
+
+  <div id="about"> <!-- About Me -->
+    <p>About me info goes here</p>
+  </div> <!-- END About Me -->
 
   <div id="education"> <!-- Education -->
 
@@ -263,13 +282,63 @@
 
   </div> <!-- END Education -->
 
-  <div> <!-- API -->
+  <div id="API"> <!-- API -->
+    <div id="APIheader">
+      <h1>API</h1>
+      <h2>An API, or Application Programming Interface, is a mechanism that allows two pieces of software to exchange messages or data in a standard format.</h2>
+      <h3>Enter a phrase in the textbox below to search New York Time's Articles.</h3>
+    </div>
+    <div id="textbox">
+      <input type="text" value="search" id="txtbox">
+      <br> <br>
+    </div>
+    <div id="button">
+      <a href="#" class="btn" id="searchbtn">Search</a>
+      <br> <br>
+    </div>
+    <div id="output"></div>
+  </div> <!-- END API -->
 
-  </div>
+  <div id="portfolio"> <!-- Portfolio -->
+    <div id="portfolioHeader">
+      <h1>PROJECTS</h1>
+      <h2>These are projects that I have worked on both at Point Park University and out of school.</h2>
+      <br>
+    </div>
 
-  <div> <!--portfolio -->
+    <div id="projectButtons">
+      <a href="#" class="btn" id="discordbtn">Discord Bot</a>
+      <a href="#" class="btn" id="wordpressbtn">WordPress</a>
+    </div>
 
-  </div>
+    <div id="DiscordBot">
+      <h3>Discord Bot - Scarlet</h3>
+      <p>This project is a bot used in Discord servers. It is coded in JavaScript.</p>
+      <p>"She" responds to premade commands using an exclamation point.</p>
+      <p>I created her for my family's Discord server, as she represents the family dog.</p>
+      <div id="Discord Bot Photos">
+        <img class="scarletFunctionality" src="Scarlet Bot Functionality.png"></img>
+        <p class="photoDesc">Bot Functionality</p>
+        <img class="scarletCode" src="Scarlet Bot Code.png"></img>
+        <p class="photoDesc">Snippet of the Code</p>
+      </div>
+    </div>
+
+    <div id="WordPress">
+      <h3>FreeBSD - WordPress Server</h3>
+      <p>This project is a WordPress page hosted on a FreeBSD server.</p>
+      <p>I created the server and webpage in my Server Management course at Point Park University.</p>
+      <p>This course taught me the fundamentals of FreeBSD and Linux, as well as shell scripting and server management tasks.</p>
+      <div id="WordPress Photos">
+        <img class="wpFolder" src="wordpress folder.png"></img>
+        <p class="photoDesc">FreeBSD Server: WordPress Folder Contents</p>
+        <img class="wpHomepage" src="wordpress homepage.png"></img>
+        <p class="photoDesc">Homepage of WordPress Website</p>
+        <img class="wpBlogPost" src="wordpress blog post.png"></img>
+        <p class="photoDesc">Blog Post on WordPress Website</p>
+      </div>
+    </div>
+  </div> <!-- END Portfolio -->
 
 </body>
 </html>
