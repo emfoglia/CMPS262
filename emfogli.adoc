@@ -1,3 +1,5 @@
+:imagesdir: Images
+
 # Personal Website
 
 All files are uploaded as submissions to assignments in CMPS 262: Advanced Programming.
@@ -12,6 +14,9 @@ There are sections for facts about me, my education, my contact information, and
 # test
 ## test
 ### test
+test
+- test
+/ test
 
 ## Git Branch Strategy
 
