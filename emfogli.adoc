@@ -9,7 +9,7 @@
 
 All files are uploaded as submissions to assignments in CMPS 262: Advanced Programming.
 
-image::myLogo.png[alt=logo,width=250px][orientation=portrait]
+image::myLogo.jpg[alt=logo,width=250px][orientation=portrait]
 
 ## About the Site
 
