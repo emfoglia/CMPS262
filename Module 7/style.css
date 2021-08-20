@@ -1,0 +1,232 @@
+/* API */
+
+body {
+  background-color: #23272a;
+}
+h1 {
+  text-align: center;
+  font-size: 80px;
+  color: white;
+}
+h2 {
+  text-align: center;
+  font-size: 27px;
+  color: white;
+}
+h3 {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+.title {
+  padding-left: 10px;
+  text-align: left;
+  font-size: 30px;
+  color: white;
+  text-decoration: underline;
+}
+.abstract {
+  padding-left: 10px;
+  font-size: 20px;
+  color: white;
+}
+.url {
+  padding-left: 10px;
+  font-size: 20px;
+  color: #ADD8E6;
+}
+.btn {
+  margin: 5px;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  border: 3px solid white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+#searchbtn:hover {
+  color: #cf2a27;
+  border-color: #cf2a27;
+}
+#txtbox {
+  text-align: center;
+  color: white;
+  background-color: #383E43;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-color: #5D676F;
+  box-sizing: border-box;
+}
+
+/* PORTFOLIO */
+
+.btn {
+  margin: 5px;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  border: 3px solid white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.scarletFunctionality {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  height: 800px;
+}
+.scarletCode {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  height: 800px;
+}
+.wpFolder {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  height: 700px;
+}
+.wpHomepage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  height: 600px;
+}
+.wpBlogPost {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  height: 800px;
+}
+body {
+  background-color: #23272a;
+}
+h1 {
+  text-align: center;
+  font-size: 80px;
+  color: white;
+}
+h2 {
+  text-align: center;
+  font-size: 27px;
+  color: white;
+}
+h3 {
+  text-align: left;
+  padding: 10px;
+  font-size: 35px;
+  color: white;
+}
+p {
+  padding-left: 10px;
+  font-size: 20px;
+  color: white;
+}
+.photoDesc {
+  text-align:center;
+  font-size: 25px;
+}
+#discordbtn:hover {
+  color: #7289da;
+  border-color: #7289da;
+}
+#wordpressbtn:hover {
+  color: #cf2a27;
+  border-color: #cf2a27;
+}
+
+/* FROM INDEX */
+
+#panel {
+  text-align: center;
+  padding-top: 50px;
+  display: none;
+  background-color: black;
+}
+.contactInfo {
+  color: white;
+}
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+.topnav a {
+  float: left;
+  color: white;
+  text-align; center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover{
+  background-color: #a7a6ba;
+  color: white;
+}
+.topnav a.active {
+  background-color: #8585FF;
+  color: white;
+}
+
+
+
+h1 {
+  text-align: center;
+  color: #00007A;
+  font-size: 55px;
+}
+h2 {
+  margin-left: 10px;
+  font-size: 27px;
+  color: black;
+}
+ul {
+  list-style-type: circle;
+  color: black;
+  font-size:23px;
+}
+.selfie {
+  border: 10px;
+  border-style: solid;
+  border-color: #bebeff;
+  float: right;
+  height: 400px;
+  align: right;
+}
+.logo {
+  float: right;
+  height: 400px;
+  align: right;
+}
+body {
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+  background-color: white;
+}
+p {
+  margin-left: 25px;
+  color: black;
+  font-size: 23px;
+}
+table {
+  margin-left: 25px;
+  border: 1px solid #8E518D;
+  border-collapse: collapse;
+}
+th {
+  font-size: 23 px;
+  color: bebeff;
+  border: 1px solid #8E518D;
+}
+td {
+  font-size: 23px;
+  color: bebeff;
+  border: 1px solid #8E518D;
+}
