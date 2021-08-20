@@ -1,83 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>Emily Foglia</title>
-  <!-- jQuery -->
-  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.css"></link>
-  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.js"></script>
+
+  <script src="jquery-3.3.1.min.js"></script>
   <script src="API.js"></script>
   <script src="portfolio.js"></script>
-  <script>
-    $(document).ready(function() {
-      hide(); //hide all sections on load
-      $("#home").show(); //show homepage on load
-      $("#homeBTN").addClass("active"); //home button active on load
+  <script src="nyanCat.js"></script>
+  <script src="navBar.js"></script>
 
-      function hide(){ //hide all sections, remove active
-        $("#home").hide();
-        $("#homeBTN").removeClass("active");
-
-        $("#about").hide();
-        $("#aboutBTN").removeClass("active");
-
-        $("#education").hide();
-        $("#educationBTN").removeClass("active");
-
-        $("#API").hide();
-        $("#apiBTN").removeClass("active");
-
-        $("#portfolio").hide();
-        $("#portfolioBTN").removeClass("active");
-      }
-
-      $("#homeBTN").on("click", function(){ // click HOME
-        hide();
-        $("#home").show();
-        $("#homeBTN").addClass("active");
-      })
-      $("#aboutBTN").on("click", function(){ // click ABOUT
-        hide();
-        $("#about").show();
-        $("#aboutBTN").addClass("active");
-      })
-      $("#educationBTN").on("click", function(){ //click EDUCATION
-        hide();
-        $("#education").show();
-        $("#educationBTN").addClass("active");
-      })
-      $("#apiBTN").on("click", function(){ //click API
-        hide();
-        $("#API").show();
-        $("#apiBTN").addClass("active");
-      })
-      $("#portfolioBTN").on("click", function(){ //click PORTFOLIO
-        hide();
-        $("#portfolio").show();
-        $("#portfolioBTN").addClass("active");
-      })
-
-      $("#flip").click(function(){ //contact info dropdown
-        $("#panel").slideToggle("slow");
-      })
-
-      $("#show").on("click", function(){ //show nyan cat
-        $("#sldr").show();
-      })
-      $("#hide").on("click", function(){ //hide nyan cat
-        $("#sldr").hide();
-      })
-
-      function rgt(){ //nyan cat animation
-        $('#sldr').animate({left: screen.width }, 5000, hider);
-      }
-      rgt();
-      function hider() {
-        $('#sldr').css('left', '0px');
-          rgt();
-      }
-    });
-  </script>
 </head>
   <style>
   #panel {
@@ -187,7 +119,6 @@
       </div>
     </div>
   </div>
-
 
   <div id="home"> <!-- Homepage -->
 
