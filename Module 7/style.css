@@ -60,42 +60,42 @@ body {
 
 
 /* EDUCATION */
-
-table {
+#education h1 {
+  text-align: center;
+  font-size: 80px;
+  color: white;
+}
+#education h2 {
+  margin-left: 10px;
+  font-size: 40px;
+  color: white;
+}
+#education table {
   margin-left: 25px;
-  border: 1px solid #8E518D;
+  border: 1px solid #8585FF;
   border-collapse: collapse;
 }
-th {
-  font-size: 23 px;
-  color: bebeff;
-  border: 1px solid #8E518D;
-}
-td {
+#education th {
+  padding: 6px;
   font-size: 23px;
-  color: bebeff;
-  border: 1px solid #8E518D;
+  color: white;
+  border: 1px solid #8585FF;
 }
-ul {
+#education td {
+  padding: 6px;
+  font-size: 23px;
+  color: white;
+  border: 1px solid #8585FF;
+}
+#education ul {
   list-style-type: circle;
-  color: black;
-  font-size:23px;
+  color: white;
+  font-size: 25px;
 }
 .logo {
   float: right;
   height: 400px;
   align: right;
-}
-
-h1 {
-  text-align: center;
-  color: #00007A;
-  font-size: 55px;
-}
-h2 {
-  margin-left: 10px;
-  font-size: 27px;
-  color: black;
 }
 
 /* API */
@@ -142,8 +142,8 @@ h2 {
   border-radius: 4px;
 }
 #APIsearchBTN:hover {
-  color: #cf2a27;
-  border-color: #cf2a27;
+  color: #8585FF;
+  border-color: #8585FF;
 }
 #txtbox {
   text-align: center;
@@ -229,6 +229,6 @@ h2 {
   font-size: 25px;
 }
 #discordbtn:hover, #wordpressbtn:hover {
-  color: #7289da;
-  border-color: #7289da;
+  color: #8585FF;
+  border-color: #8585FF;
 }
