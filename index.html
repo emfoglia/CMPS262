@@ -1,179 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>Emily Foglia</title>
-  <!-- jQuery -->
-  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.css"></link>
-  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.js"></script>
+
+  <script src="jquery-3.3.1.min.js"></script>
   <script src="API.js"></script>
   <script src="portfolio.js"></script>
-  <script>
-    $(document).ready(function() {
-      hide(); //hide all sections on load
-      $("#home").show(); //show homepage on load
-      $("#homeBTN").addClass("active"); //home button active on load
+  <script src="nyanCat.js"></script>
+  <script src="navBar.js"></script>
 
-      function hide(){ //hide all sections, remove active
-        $("#home").hide();
-        $("#homeBTN").removeClass("active");
+  <link rel="stylesheet" href="style.css">
 
-        $("#about").hide();
-        $("#aboutBTN").removeClass("active");
-
-        $("#education").hide();
-        $("#educationBTN").removeClass("active");
-
-        $("#API").hide();
-        $("#apiBTN").removeClass("active");
-
-        $("#portfolio").hide();
-        $("#portfolioBTN").removeClass("active");
-      }
-
-      $("#homeBTN").on("click", function(){ // click HOME
-        hide();
-        $("#home").show();
-        $("#homeBTN").addClass("active");
-      })
-      $("#aboutBTN").on("click", function(){ // click ABOUT
-        hide();
-        $("#about").show();
-        $("#aboutBTN").addClass("active");
-      })
-      $("#educationBTN").on("click", function(){ //click EDUCATION
-        hide();
-        $("#education").show();
-        $("#educationBTN").addClass("active");
-      })
-      $("#apiBTN").on("click", function(){ //click API
-        hide();
-        $("#API").show();
-        $("#apiBTN").addClass("active");
-      })
-      $("#portfolioBTN").on("click", function(){ //click PORTFOLIO
-        hide();
-        $("#portfolio").show();
-        $("#portfolioBTN").addClass("active");
-      })
-
-      $("#flip").click(function(){ //contact info dropdown
-        $("#panel").slideToggle("slow");
-      })
-
-      $("#show").on("click", function(){ //show nyan cat
-        $("#sldr").show();
-      })
-      $("#hide").on("click", function(){ //hide nyan cat
-        $("#sldr").hide();
-      })
-
-      function rgt(){ //nyan cat animation
-        $('#sldr').animate({left: screen.width }, 5000, hider);
-      }
-      rgt();
-      function hider() {
-        $('#sldr').css('left', '0px');
-          rgt();
-      }
-    });
-  </script>
 </head>
-  <style>
-  #panel {
-    text-align: center;
-    padding-top: 50px;
-    display: none;
-    background-color: black;
-  }
-  .contactInfo {
-    color: white;
-  }
-  h1 {
-    text-align: center;
-    color: #00007A;
-    font-size:55px;
-  }
-  h2 {
-    margin-left: 10px;
-    font-size:27px;
-    color: black;
-  }
-  ul {
-    list-style-type:circle;
-    color: black;
-    font-size:23px;
-  }
-  .selfie {
-    border: 10px;
-    border-style: solid;
-    border-color: #bebeff;
-    float: right;
-    height:400px;
-    align: right;
-  }
-  .logo {
-    float: right;
-    height:400px;
-    align: right;
-  }
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-  }
-  p {
-    margin-left: 25px;
-    color: black;
-    font-size: 23px;
-  }
-  table {
-    margin-left: 25px;
-    border: 1px solid #8E518D;
-    border-collapse: collapse;
-  }
-  th {
-    font-size: 23 px;
-    color: bebeff;
-    border: 1px solid #8E518D;
-  }
-  td {
-    font-size: 23px;
-    color: bebeff;
-    border: 1px solid #8E518D;
-  }
-  .topnav {
-    overflow: hidden;
-    background-color: black;
-  }
-  .topnav a {
-    float: left;
-    color: white;
-    text-align; center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  .topnav a:hover{
-    background-color: #a7a6ba;
-    color: white;
-  }
-  .topnav a.active {
-    background-color: #8585FF;
-    color: white;
-  }
-  button {
-    width: 20px;
-  }
-  </style>
-  <body>
+
+<body>
   <div class="topnav"> <!-- Navigation Bar -->
-    <a href="#home" id="homeBTN">Home</a>
-    <a href="#about" id="aboutBTN">About Me</a>
-    <a href="#education" id="educationBTN">Education</a>
-    <a href="#API" id="apiBTN">API</a>
-    <a href="#portfolio" id="portfolioBTN">Portfolio</a>
-    <a href="#" id="flip">Contact</a>
+    <a href="javascript:;" id="homeBTN">Home</a>
+    <a href="javascript:;" id="educationBTN">Education</a>
+    <a href="javascript:;" id="apiBTN">API</a>
+    <a href="javascript:;" id="portfolioBTN">Portfolio</a>
+    <a href="javascript:;" id="flip">Contact</a>
   </div>
 
   <div>  <!-- Contact Info -->
@@ -181,13 +28,12 @@
       <div id="contact">
         <p class="contactInfo">emfogli@pointpark.edu</p>
         <p class="contactInfo">(724) 809-4489</p>
-        <a class="contactInfo" href="https://www.linkedin.com/in/emilyfoglia/" target="_blank">LinkedIn</a>
+        <a class="contactInfo" id="linkedin" href="https://www.linkedin.com/in/emilyfoglia/" target="_blank">LinkedIn</a>
         <br>
         <br>
       </div>
     </div>
   </div>
-
 
   <div id="home"> <!-- Homepage -->
 
@@ -199,15 +45,29 @@
     <img class="selfie" src="picture of me.jpg">
   </div>
 
-  <div>
+  <div id="about">
     <p>I am from Pittsburgh, Pennsylvania.
       <br>My hobbies include exotic pet-keeping, gaming, and reading.
       <br>I am persuing a career in Software Development.</p>
-  </div>
-
-  <div> <!-- show/hide Buttons -->
-    <button id="hide" style="width:200px;float:left;">Hide Nyan Cat</button>
-    <button id="show" style="width:200px;float:left;">Show Nyan Cat</button>
+    <h2>Top 3 Favorites by Category:</h2>
+    <h3>Music:</h3>
+    <ul>
+      <li>PVRIS</li>
+      <li>Fall Out Boy</li>
+      <li>Twenty One Pilots</li>
+    </ul>
+    <h3>Movies:</h3>
+    <ul>
+      <li>Corpse Bride</li>
+      <li>Warm Bodies</li>
+      <li>Ready Player One</li>
+    </ul>
+    <h3>Video Games:</h3>
+    <ul>
+      <li>Valorant</li>
+      <li>Fortnite</li>
+      <li>League of Legends</li>
+    </ul>
   </div>
 
   <!-- NYAN CAT -->
@@ -220,11 +80,12 @@
     </form>
   </div>
 
-  </div> <!-- END Homepage -->
+  <div> <!-- show/hide Buttons -->
+    <button id="hide">Hide Nyan Cat</button>
+    <button id="show">Show Nyan Cat</button>
+  </div>
 
-  <div id="about"> <!-- About Me -->
-    <p>About me info goes here</p>
-  </div> <!-- END About Me -->
+  </div> <!-- END Homepage -->
 
   <div id="education"> <!-- Education -->
 
@@ -233,7 +94,7 @@
     </div>
 
     <div> <!-- Picture -->
-      <img class="logo" src="myLogo.png">
+      <img class="logo" src="myLogoWhite.png">
     </div>
 
   <div> <!-- Education Info -->
@@ -293,7 +154,7 @@
       <br> <br>
     </div>
     <div id="button">
-      <a href="#" class="btn" id="searchbtn">Search</a>
+      <a href="#" id="searchbtn">Search</a>
       <br> <br>
     </div>
     <div id="output"></div>
@@ -307,8 +168,8 @@
     </div>
 
     <div id="projectButtons">
-      <a href="#" class="btn" id="discordbtn">Discord Bot</a>
-      <a href="#" class="btn" id="wordpressbtn">WordPress</a>
+      <a href="#" class="portfolioProjectBTN" id="discordbtn">Discord Bot</a>
+      <a href="#" class="portfolioProjectBTN" id="wordpressbtn">WordPress</a>
     </div>
 
     <div id="DiscordBot">

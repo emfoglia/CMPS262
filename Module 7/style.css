@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+  background-color: #23272a;
+}
+
+/* NAV BAR */
+
+#panel {
+  text-align: center;
+  padding-top: 50px;
+  display: none;
+  background-color: black;
+}
+#linkedin {
+  color: white;
+  text-decoration: none;
+}
+#linkedin:hover {
+  color: #8585FF
+}
+.contactInfo {
+  font-size: 25px;
+  color: white;
+}
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+.topnav a {
+  float: left;
+  color: white;
+  text-align; center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover{
+  background-color: #a7a6ba;
+  color: white;
+}
+.topnav a.active {
+  background-color: #8585FF;
+  color: white;
+}
+
+/* HOME */
+#home h1 {
+  padding: 10px;
+  text-align: center;
+  font-size: 70px;
+  color: white;
+}
+.selfie {
+  padding: 10px;
+  border-radius: 75px;
+  float: right;
+  height: 600px;
+  align: right;
+}
+#about p{
+  text-align: left;
+  margin-left: 25px;
+  color: white;
+  font-size: 30px;
+}
+#show, #hide {
+  background-color: #23272a;
+  margin: 5px;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  border: 3px solid white;
+  text-decoration: none;
+  border-radius: 4px;
+  float: right;
+}
+#show:hover, #hide:hover {
+  color: #8585FF;
+  border-color: #8585FF;
+}
+#about ul {
+  list-style-type: circle;
+  color: white;
+  font-size: 25px;
+}
+#about h2 {
+  margin-left: 10px;
+  font-size: 35px;
+  color: white;
+}
+#about h3 {
+  margin-left: 10px;
+  font-size: 30px;
+  color: white;
+}
+
+/* EDUCATION */
+#education h1 {
+  text-align: center;
+  font-size: 80px;
+  color: white;
+}
+#education h2 {
+  margin-left: 10px;
+  font-size: 40px;
+  color: white;
+}
+#education table {
+  margin-left: 25px;
+  border: 1px solid #8585FF;
+  border-collapse: collapse;
+}
+#education th {
+  padding: 6px;
+  font-size: 23px;
+  color: white;
+  border: 1px solid #8585FF;
+}
+#education td {
+  padding: 6px;
+  font-size: 23px;
+  color: white;
+  border: 1px solid #8585FF;
+}
+#education ul {
+  list-style-type: circle;
+  color: white;
+  font-size: 25px;
+}
+.logo {
+  float: right;
+  height: 400px;
+  align: right;
+}
+
+/* API */
+
+#API h1 {
+  text-align: center;
+  font-size: 80px;
+  color: white;
+}
+#API h2 {
+  text-align: center;
+  font-size: 27px;
+  color: white;
+}
+#API h3 {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+.title {
+  padding-left: 10px;
+  text-align: left;
+  font-size: 30px;
+  color: white;
+  text-decoration: underline;
+}
+.abstract {
+  padding-left: 10px;
+  font-size: 20px;
+  color: white;
+}
+.url {
+  padding-left: 10px;
+  font-size: 20px;
+  color: #ADD8E6;
+}
+#searchbtn {
+  margin: 5px;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  border: 3px solid white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+#searchbtn:hover {
+  color: #8585FF;
+  border-color: #8585FF;
+}
+#txtbox {
+  text-align: center;
+  color: white;
+  background-color: #383E43;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-color: #5D676F;
+  box-sizing: border-box;
+}
+
+/* PORTFOLIO */
+
+#portfolio h1 {
+  text-align: center;
+  font-size: 80px;
+  color: white;
+}
+#portfolio h2 {
+  text-align: center;
+  font-size: 27px;
+  color: white;
+}
+#portfolio h3 {
+  text-align: left;
+  padding: 10px;
+  font-size: 35px;
+  color: white;
+}
+#portfolio p {
+  padding-left: 10px;
+  font-size: 20px;
+  color: white;
+}
+#discordbtn, #wordpressbtn {
+  margin: 5px;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  border: 3px solid white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.scarletFunctionality {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  height: 800px;
+}
+.scarletCode {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  height: 800px;
+}
+.wpFolder {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  height: 700px;
+}
+.wpHomepage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  height: 600px;
+}
+.wpBlogPost {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  height: 800px;
+}
+.photoDesc {
+  text-align:center;
+  font-size: 25px;
+}
+#discordbtn:hover, #wordpressbtn:hover {
+  color: #8585FF;
+  border-color: #8585FF;
+}
