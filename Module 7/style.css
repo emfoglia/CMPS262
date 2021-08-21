@@ -1,4 +1,11 @@
+body {
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+  background-color: #23272a;
+}
+
 /* NAV BAR */
+
 #panel {
   text-align: center;
   padding-top: 50px;
@@ -29,47 +36,31 @@
   color: white;
 }
 
+/* HOME */
+#home h1 {
+  padding: 10px;
+  float: left;
+  font-size: 70px;
+  color: white;
+}
 
-
-#education h1 {
-  text-align: center;
-  color: #00007A;
-  font-size: 55px;
-}
-h2 {
-  margin-left: 10px;
-  font-size: 27px;
-  color: black;
-}
-ul {
-  list-style-type: circle;
-  color: black;
-  font-size:23px;
-}
 .selfie {
-  border: 10px;
-  border-style: solid;
-  border-color: #bebeff;
-  border-radius: 25px;
+  padding: 10px;
+  border-radius: 75px;
   float: right;
-  height: 400px;
+  height: 600px;
   align: right;
 }
-.logo {
-  float: right;
-  height: 400px;
-  align: right;
-}
-body {
-  margin: 0;
-  font-family: Tahoma, sans-serif;
-  background-color: #23272a;
-}
-p {
+
+#about p{
   margin-left: 25px;
-  color: black;
+  color: white;
   font-size: 23px;
 }
+
+
+/* EDUCATION */
+
 table {
   margin-left: 25px;
   border: 1px solid #8E518D;
@@ -85,7 +76,27 @@ td {
   color: bebeff;
   border: 1px solid #8E518D;
 }
+ul {
+  list-style-type: circle;
+  color: black;
+  font-size:23px;
+}
+.logo {
+  float: right;
+  height: 400px;
+  align: right;
+}
 
+h1 {
+  text-align: center;
+  color: #00007A;
+  font-size: 55px;
+}
+h2 {
+  margin-left: 10px;
+  font-size: 27px;
+  color: black;
+}
 
 /* API */
 

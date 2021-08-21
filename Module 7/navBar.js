@@ -7,9 +7,6 @@ $(document).ready(function() {
     $("#home").hide();
     $("#homeBTN").removeClass("active");
 
-    $("#about").hide();
-    $("#aboutBTN").removeClass("active");
-
     $("#education").hide();
     $("#educationBTN").removeClass("active");
 
@@ -24,11 +21,6 @@ $(document).ready(function() {
     hide();
     $("#home").show();
     $("#homeBTN").addClass("active");
-  })
-  $("#aboutBTN").on("click", function(){ // click ABOUT
-    hide();
-    $("#about").show();
-    $("#aboutBTN").addClass("active");
   })
   $("#educationBTN").on("click", function(){ //click EDUCATION
     hide();
