@@ -12,7 +12,15 @@ body {
   display: none;
   background-color: black;
 }
+#linkedin {
+  color: white;
+  text-decoration: none;
+}
+#linkedin:hover {
+  color: #8585FF
+}
 .contactInfo {
+  font-size: 25px;
   color: white;
 }
 .topnav {
@@ -39,11 +47,10 @@ body {
 /* HOME */
 #home h1 {
   padding: 10px;
-  float: left;
+  text-align: center;
   font-size: 70px;
   color: white;
 }
-
 .selfie {
   padding: 10px;
   border-radius: 75px;
@@ -51,13 +58,42 @@ body {
   height: 600px;
   align: right;
 }
-
 #about p{
+  text-align: left;
   margin-left: 25px;
   color: white;
-  font-size: 23px;
+  font-size: 30px;
 }
-
+#show, #hide {
+  background-color: #23272a;
+  margin: 5px;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  border: 3px solid white;
+  text-decoration: none;
+  border-radius: 4px;
+  float: right;
+}
+#show:hover, #hide:hover {
+  color: #8585FF;
+  border-color: #8585FF;
+}
+#about ul {
+  list-style-type: circle;
+  color: white;
+  font-size: 25px;
+}
+#about h2 {
+  margin-left: 10px;
+  font-size: 35px;
+  color: white;
+}
+#about h3 {
+  margin-left: 10px;
+  font-size: 30px;
+  color: white;
+}
 
 /* EDUCATION */
 #education h1 {
@@ -132,7 +168,7 @@ body {
   font-size: 20px;
   color: #ADD8E6;
 }
-#APIsearchBTN {
+#searchbtn {
   margin: 5px;
   color: white;
   padding: 10px;
@@ -141,7 +177,7 @@ body {
   text-decoration: none;
   border-radius: 4px;
 }
-#APIsearchBTN:hover {
+#searchbtn:hover {
   color: #8585FF;
   border-color: #8585FF;
 }
